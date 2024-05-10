@@ -1,0 +1,182 @@
+/* div en général */
+
+div{
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;    
+} 
+
+
+/* En-tête et navigation */
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}  
+  header > h1 {
+    position: fixed;
+    top: 14px;
+    color: #bbdbf5;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin-left: 117px; /* À ajuster selon écran */
+  }  
+  header > img {
+    position: fixed;
+    height: 50px;
+    margin: 12px;
+    border-radius: 12px; 
+  }
+
+.navigation {
+  display: flex;    
+  justify-content: right;
+  padding-right: 30px;   
+  background-color: rgb(6, 52, 97);
+}    
+  .navigation > a {
+    background-color: #bbdbf5;
+    color: rgb(6, 52, 97);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 135px;
+  }  
+  .navigation a:hover {
+    background-color: rgb(6, 52, 97);
+    color: #bbdbf5;
+  }
+
+.titresPale {
+  color: white;
+  text-align: center;  
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+  
+#titreFonce {
+  color: rgb(6, 52, 97);
+  text-align: center;  
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+
+/* Section centrale principale */
+
+/* Accueil */
+.main{
+  background-color: #bbdbf5;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:rgb(6, 52, 97);
+  height: 610px;
+  padding-top: 15px;
+}
+  .main > img{
+    padding-top: 10px;
+    height: 85%;    
+  }
+
+/* Carte interactive */
+.carte {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 750px;
+  background-color: rgb(66, 121, 177);
+}  
+  .carte > h2 {
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    
+  }
+  .carte > #map {
+    margin-left: 16.1666%;
+    margin-right: 16.1666%;
+    height: 85%;
+    z-index: 0;    
+  }
+
+.legend {
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  line-height: 30px;
+  color: #292828;
+}  
+  .legend span {
+    position: relative;
+  }  
+  .legend i {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 0 10px 0 0;
+  }  
+  .legend i.icon {
+    background-size: 30px; 
+  }
+
+/* Informations */
+.aside{  
+  background-color: rgb(6, 52, 97);
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+ .aside > a {
+    display: block;
+    color: #bbdbf5;
+    text-decoration: none;
+    padding-top: 7px;
+    text-align: center;  
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+/* Poissons */
+.section{
+  background-color: #93bfe2;
+  height: 150px;
+  padding: 10px;
+  text-align: center;  
+  margin-bottom: 30px;
+}
+  .section > img{
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60%;    
+  }
+
+
+/* Pied-de-page */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(6, 52, 97)
+}  
+  footer > p {
+    color: #bbdbf5;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 6px;
+  }
